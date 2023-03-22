@@ -11,11 +11,12 @@ df = deserialize("dataset.dat")
 # use only first 1000
 df_s = df[1:1000, :]
 
-
 # note that missing values are ignored by default
 frm_linear = @formula(x5 ~ x1 + x2 + x3 + fruit)
 fit_linear = lm(frm_linear, df_s);
 fit_linear
+
+# write to file (for next script)
 serialize("fit_linear.dat", fit_linear)
 
 # add x4 predictor

@@ -1,7 +1,11 @@
-using Distributions, Random, Turing
+using Distributions
+using Random
+using Turing
+using GLM
 using LinearAlgebra
 using StatsPlots
 using Serialization
+using CategoricalArrays
 
 # get data as model matrices
 fit_linear = deserialize("fit_linear.dat")
@@ -26,4 +30,5 @@ model = bayesian_regression(y, X)
 chain = sample(model, NUTS(), 10_000)
 
 # plot!
+theme(:dark)
 plot(chain)
