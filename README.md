@@ -1,5 +1,8 @@
-# julia_for_statisticians
+# Julia for statisticians
 Short live-coding intro to Julia for statisticians
+
+![image](https://user-images.githubusercontent.com/11596858/226922795-8d29f8af-1adb-4316-9cf3-a1fb07b4b5d4.png)
+
 
 ## Setup
 
