@@ -9,10 +9,10 @@ Short live-coding intro to Julia for statisticians
 - Download and install visual studio code (https://code.visualstudio.com/)
 - From within vs code, install the julia extension for visual studio code
 - install `juliaup` (https://github.com/JuliaLang/juliaup)
-- Install julia 1.9 release candidate (rc) with `juliaup` by typing the following in your command line
+- Install the latest release version with `juliaup` by typing the following in your command line
 	```
-  juliaup add rc
-  juliaup default rc
+  juliaup add release
+  juliaup default release
   ```
 - You can check that this went well with `juliaup status`
 - Download the code repository https://github.com/vankesteren/julia_for_statisticians
